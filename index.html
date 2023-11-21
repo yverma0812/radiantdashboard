@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style> 
+	a {color: white;text-decoration:none;} 
+	.media-body {text-decoration:none}
+</style>  
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">RADIANT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+ 
+        <li class="nav-item">
+          <a class="nav-link" href="dispatch.html">Dispatch</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="trace.html">Trace</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid p-2 my-1 ">
+  <div class="mt-1 p-5 bg-dark text-white rounded">
+  	<h1>What time is it..!</h1>
+ 	<div class="row">
+ 	 	<div class="col-sm-3">
+			<div style="text-align:center;padding:1em 0;">
+     				<h4>Toronto</h4> 
+     				<iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FToronto&show=hour_minute"          					width="100%" height="90" frameborder="0" seamless>
+				</iframe> 
+     			</div>
+		</div>
+  		<div class="col-sm-3">
+			<div style="text-align:center;padding:1em 0;"> 
+				<h4>Alberta</h4> 
+				<iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FEdmonton&show=hour_minute" 						width="100%" height="90" frameborder="0" seamless>
+				</iframe> 
+			</div>
+				
+				
+		</div>
+	 	<div class="col-sm-3">
+			<div style="text-align:center;padding:1em 0;"> 
+     				<h4>Manitoba</h4> 
+     				<iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FWinnipeg&show=hour_minute" 				width="100%" height="90" frameborder="0" seamless>
+				</iframe> 
+     			</div>
+
+			
+		</div>
+		<div class="col-sm-3">
+			<div style="text-align:center;padding:1em 0;"> 
+				<h4>Vancouver</h4> 
+				<iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FVancouver&show=hour_minute" 						width="100%" height="90" frameborder="0" seamless>
+				</iframe> 
+			</div>
+
+			
+		</div>
+	</div>
+	<div class="row">
+ 		<div class="col-sm-3">
+			<div style="text-align:center;padding:1em 0;"> 
+				<h4>Québec</h4> 
+				<iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FToronto&show=hour_minute" 				width="100%" height="90" frameborder="0" seamless>
+				</iframe> 
+			</div>
+    		</div>
+  	 	<div class="col-sm-3">
+       			<div style="text-align:center;padding:1em 0;">
+         			<h4>Nova Scotia</h4> 
+         			<iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FHalifax&show=hour_minute" width="100%" height="90" frameborder="0" seamless>
+				</iframe> 
+       			</div>
+         	</div>
+		<div class="col-sm-3">
+			<div style="text-align:center;padding:1em 0;"> 
+  				<h4>Chicago</h4> 
+  				<iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FChicago&show=hour_minute" 				width="100%" height="90" frameborder="0" seamless>
+				</iframe> 
+  			</div>
+  			
+  		</div>
+		<div class="col-sm-3">
+			<div style="text-align:center;padding:1em 0;"> 
+    				<h4>California</h4> 
+    				<iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FLos_Angeles&show=hour_minute" 				width="100%" height="90" frameborder="0" seamless>
+				</iframe> 
+  			</div>
+    		</div>
+	</div>
+</div>
+
+<div class="mt-4 p-5 bg-dark text-white rounded">
+	<div class="row">
+ 	 	<div class="col-sm-3">
+ 	     		<div style="text-align:center;padding:1em 0;">
+            			<h4>TEDS REPORT</h4> 
+   				<a href="http://camis1-bioasp01.wheelsgroup.com/Reports/Pages/Report.aspx?ItemPath=%2fTMS+Operational+Reports%2fTEDS++Tracing									+REPORT&ViewMode=Detail" target="_blank"><div class="media-left media-top">
+    					<img src="../images/report.png" class="media-object" style="width:60px">
+  				</div>
+  				<div class="media-body">
+    					<h4 class="media-heading">TEDS Tracing Report</h4>
+    					<p>Tracing Report used to track all the loads dipatched by dispatchers among all teams with custom sort by customer, mode & dispatchers.</p>
+  				</div>
+				</a>
+             		</div>
+       		</div>
+
+
+		<div class="col-sm-3">
+ 	     		<div style="text-align:center;padding:1em 0;">
+            			<h4>CHECK-INS</h4> 
+   				<a href="http://camis2-dbaasp04.wheelsgroup.com/reports/report/RadiantDriverLog/DriverCheckInLog" target="_blank"><div class="media-left media-top">
+    					<img src="../images/report.png" class="media-object" style="width:60px">
+  				</div>
+  				<div class="media-body">
+    					<h4 class="media-heading">Driver Checkins Log</h4>
+    					<p>Reporting tool to analyze driver checked in different warehouses for pickup, drops and deliveries.</p>
+  				</div>
+				</a>
+             		</div>
+       		</div>
+        	<div class="col-sm-3">
+            		<div style="text-align:center;padding:1em 0;"> 
+            			<h4>ADP</h4> 
+            			<a href="https://online.adp.com/signin/v1/?APPID=WFNPortal&productId=80e309c3-7085-bae1-e053-				3505430b5495&returnURL=https://workforcenow.adp.com/&callingAppId=WFN" target="_blank">
+					<div class="media">
+					</div>
+  					<div class="media-right">
+    						<img src="../images/adp.jpeg" class="media-object" style="width:60px">
+  					</div>
+  <div class="media-body">
+    <h4 class="media-heading">ADP Workforce solutions</h4>
+    <p>Manage your vacation balances, check your payrolls, access to online training sessions and shop for less with embedded workperks with Vennego.</p>
+  </div>
+
+</div></a>
+            </div>
+
+
+
+<div class="col-sm-3">
+<div style="text-align:center;padding:1em 0;"> 
+<h4>WATERCOOLER</h4> 
+<a href="https://radiantdelivers.sharepoint.com/sites/watercooler" target="_blank">
+<div class="media">
+<div class="media-right">
+<img src="../images/getsitelogo.jfif" class="media-object" style="width:60px"><br><br><br>
+</div>
+<div class="media-body">
+<h4 class="media-heading">Radiant Watercooler</h4>
+<p ">Radiant Newsboard, employee resources and many more.</p>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<br>
+
+<div class="container-fluid">
+<div class="jumbotron">
+<h5>Radiant Logistics, Inc. (www.radiantdelivers.com) is a comprehensive North American provider of third-party logistics and multimodal transportation services. Through its comprehensive service offering, Radiant provides domestic and international freight forwarding services, truck and rail brokerage services and other value-added supply chain management services, including customs brokerage, order fulfillment, inventory management and warehousing to a diversified account base including manufacturers, distributors and retailers using a network of independent carriers and international agents positioned strategically around the world</h5>
+
+
+</div>
+</div>
+
+
+
+</body>
+</html>
